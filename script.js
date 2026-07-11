@@ -20,7 +20,7 @@ if (navToggle && navLinks) {
   });
 }
 
-const sectionLinks = Array.from(document.querySelectorAll(".nav-links a"));
+const sectionLinks = Array.from(document.querySelectorAll('.nav-links a[href^="#"]'));
 const sections = sectionLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
